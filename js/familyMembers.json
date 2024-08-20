@@ -1,0 +1,88 @@
+{
+  "members": [
+    {
+      "name": "Dad",
+      "job": "Engineer",
+      "birthDate": "January 15, 1970",
+      "birthPlace": "Paris, France",
+      "traits": "Serious, Hardworking, Passionate about gardening",
+      "hobbies": "Gardening, DIY",
+      "bio": "Dad is the pillar of the family. He is passionate about gardening and loves to tinker in the garage. Always ready to help and support his loved ones, he embodies stability and reliability.",
+      "photo": "https://media.istockphoto.com/id/1644238002/de/foto/gesch%C3%A4ft-selbstvertrauen-und-portr%C3%A4t-schwarzer-mann-mit-l%C3%A4cheln-im-b%C3%BCro-startup-ceo-oder.jpg?s=612x612&w=0&k=20&c=3zNTzMipLAN1Cz3FzJQQbjPjvQiqv69MBrMOmXqGznc=",
+      "social": {
+        "facebook": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "Mom",
+      "job": "Doctor",
+      "birthDate": "March 20, 1972",
+      "birthPlace": "Lyon, France",
+      "traits": "Loving, Organized, Excellent cook",
+      "hobbies": "Cooking, Gardening",
+      "bio": "Mom is the heart of the home. She loves cooking delicious meals for the family and taking care of the vegetable garden. Her kindness and love for her loved ones make her an exceptional person.",
+      "photo": "path/to/mom.jpg",
+      "social": {
+        "facebook": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "Daughter",
+      "job": "Student",
+      "birthDate": "April 10, 2000",
+      "birthPlace": "Marseille, France",
+      "traits": "Creative, Passionate about art, Friendly",
+      "hobbies": "Drawing, Painting, Reading",
+      "bio": "Our daughter is an aspiring artist. She spends her days drawing and painting, filling the house with colors. Her creativity and zest for life are contagious.",
+      "photo": "path/to/daughter.jpg",
+      "social": {
+        "facebook": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "Son",
+      "job": "Schoolboy",
+      "birthDate": "May 5, 2010",
+      "birthPlace": "Nice, France",
+      "traits": "Curious, Adventurous, Energetic",
+      "hobbies": "Exploring nature, Playing with friends",
+      "bio": "Our son is a little adventurer. He loves exploring nature and spending time playing with his friends. Always on the lookout for new discoveries, he surprises us every day with his curiosity.",
+      "photo": "path/to/son.jpg",
+      "social": {
+        "facebook": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "Grandpa",
+      "job": "Retired",
+      "birthDate": "July 30, 1945",
+      "birthPlace": "Toulouse, France",
+      "traits": "Wise, Loving, Storyteller",
+      "hobbies": "Telling stories, Spending time with his grandchildren",
+      "bio": "Grandpa is the memory of the family. He loves telling stories from his past and sharing his wisdom with the grandchildren. His presence brings unmatched warmth and depth.",
+      "photo": "path/to/grandpa.jpg",
+      "social": {
+        "facebook": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "Friend",
+      "job": "Teacher",
+      "birthDate": "November 12, 1980",
+      "birthPlace": "Bordeaux, France",
+      "traits": "Loyal, Generous, Funny",
+      "hobbies": "Reading, Teaching, Traveling",
+      "bio": "Our friend is almost a family member. He is always there to support us and share joyful moments. His generosity and humor make him a cherished person.",
+      "photo": "path/to/friend.jpg",
+      "social": {
+        "facebook": "#",
+        "instagram": "#"
+      }
+    }
+  ]
+}

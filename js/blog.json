@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "title": "Title of Article 1",
+        "date": "August 7, 2024",
+        "author": "Author",
+        "content": "Here is the full content of Article 1. It contains detailed information about the discussed topic, as well as interesting anecdotes and insights. We explored various aspects and included relevant testimonials to enrich the article."
+    },
+    {
+        "id": 1,
+        "title": "Title of Article 2",
+        "date": "August 5, 2024",
+        "author": "Author",
+        "content": "Here is the full content of Article 2. This text deeply explores the various aspects of the topic, offering unique perspectives and relevant data. The article is based on thorough research and includes quotes from experts."
+    },
+    {
+        "id": 2,
+        "title": "Title of Article 3",
+        "date": "August 3, 2024",
+        "author": "Author",
+        "content": "Here is the full content of Article 3. The article provides an in-depth analysis and reflections on the theme, enriched by concrete examples and testimonials. It also addresses the challenges and opportunities associated with the subject."
+    },
+    {
+        "id": 3,
+        "title": "Title of Article 4",
+        "date": "August 1, 2024",
+        "author": "Author",
+        "content": "Here is the full content of Article 4. The text is rich in information and practical advice, aimed at enlightening the reader on the discussed topic. Personal anecdotes and lived experiences add a human touch to the article."
+    }
+]

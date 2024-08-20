@@ -1,0 +1,989 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@800&display=swap');
+
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #488ca9; /* Couleur principale pour le fond */
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Texte stylisé pour "FAMILY" */
+.loader-title {
+    font-size: 6rem; /* Taille de la police par défaut */
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif; /* Utilisation de la police Raleway */
+    color: #ffffff; /* Couleur blanche pour le texte */
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre légère pour le texte */
+}
+
+/* Media query pour petits écrans */
+@media (max-width: 768px) {
+    .loader-title {
+        font-size: 4rem; /* Taille de la police réduite sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .loader-title {
+        font-size: 3rem; /* Taille de la police encore réduite sur les très petits écrans */
+    }
+}
+
+/* Style du contenu principal */
+#content {
+    display: none; /* Caché initialement, révélé après l'animation du loader */
+    opacity: 0;    /* Initialement caché avec opacité */
+    background-color: #e0f2f1; /* Couleur de fond très claire en harmonie avec le vert */
+    color: #48a999; /* Couleur principale pour le texte du contenu */
+    transition: all 0.3s ease-in-out; /* Transition douce pour les changements de style */
+}
+
+/* Survol des lettres */
+.loader-title .letter:hover {
+    color: #b2dfdb; /* Couleur plus claire au survol des lettres */
+    transition: color 0.3s ease;
+}
+
+/* Ajout d'une animation de pulsation pour les lettres */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.loader-title .letter {
+    display: inline-block;
+    animation: pulse 1.5s infinite ease-in-out; /* Animation de pulsation */
+}
+
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e0f7fa 100%);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #17a2b8; /* Couleur bleu turquoise pour tous les titres */
+}
+
+header, footer {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    background-color: #d4f1f4; /* Couleur turquoise clair au survol */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #138f9a; /* Couleur pour le lien actif */
+    background-color: #d4f1f4; /* Arrière-plan pour le lien actif */
+    font-weight: bold; /* Optionnel : mettez le texte en gras */
+}
+
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Icônes sociales */
+.social-icon {
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e0f7fa 100%); /* Fond en dégradé */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Sections avec images */
+#image-section {
+    background: url('../img/family.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+#background-image-section {
+    background: url('../img/family.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+/* Cartes */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%); /* Fond en dégradé */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #00796b; /* Couleur turquoise pour les titres des cartes */
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #138f9a; /* Couleur turquoise foncée au survol */
+    border-color: #138f9a;
+}
+
+/* Section des événements */
+#events-section {
+    background: linear-gradient(135deg, #ffffff 0%, #e0f7fa 100%); /* Fond en dégradé */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+#events-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #17a2b8;
+}
+
+/* Pied de page */
+footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #17a2b8, #138f9a);
+}
+
+
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+footer .fab {
+    font-size: 1.25rem;
+    transition: color 0.3s;
+    color: #fff;
+}
+
+footer .fab:hover,
+#social .fab:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+/* Animation du chargement */
+html {
+    scroll-behavior: smooth;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Visibilité des sections */
+section, .card, .photo {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    will-change: opacity;
+}
+
+section.is-visible, .card.is-visible, .photo.is-visible {
+    opacity: 1;
+}
+
+/* Animation au défilement */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+}
+
+[data-aos="fade-up"] {
+    transform: translate3d(0, 100px, 0);
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+footer .social-icons .fab {
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+/* Media Queries pour une adaptation responsive */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    #image-section, #background-image-section {
+        height: 250px;
+    }
+
+    #presentation p,
+    #gallery-section p,
+    #values p,
+    .card-text{
+        font-size: smaller;
+        margin-top: 5%;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    #events-section h2 {
+        font-size: 2rem;
+    }
+
+    .carousel img {
+        border-radius: 0;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-indicators {
+        bottom: 5px;
+    }
+
+    .carousel-indicators li {
+        width: 6px;
+        height: 6px;
+    }
+    #members .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #members .card-title {
+        font-size: 1rem;
+    }
+
+    #members .card-text {
+        font-size: 0.85rem;
+    }
+
+    #members .card-body {
+        padding: 10px;
+    }
+
+    #members .btn-primary {
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+
+    #members .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #members .col-6 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #viewAllMembers {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.8rem;
+        margin-right: 5px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    #events-section h2 {
+        font-size: 1.75rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icon {
+        margin-right: 10px;
+    }
+
+    .carousel-item {
+        padding: 0 10px;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 20px;
+        height: 20px;
+    }
+
+    .carousel-indicators {
+        bottom: 3px;
+    }
+
+    .carousel-indicators li {
+        width: 4px;
+        height: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    #gallery-section .row,
+    #all-photos-section .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #gallery-section .col-md-4,
+    #all-photos-section .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #members .row,
+    #all-members-section .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #members .col-md-4,
+    #all-members-section .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #members .card,
+    #all-members-section .card {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    #members .card img,
+    #all-members-section .card img {
+        width: 70px; /* Kleinere Bildgröße */
+        height: 70px; /* Kleinere Bildgröße */
+        margin-top: 10px;
+    }
+
+    #members .card-title,
+    #all-members-section .card-title {
+        font-size: 1rem; /* Kleinere Schriftgröße für den Titel */
+        margin-top: 10px;
+    }
+
+    #members .card-text,
+    #all-members-section .card-text {
+        font-size: 0.8rem; /* Kleinere Schriftgröße für den Text */
+    }
+
+    #members .btn-primary,
+    #all-members-section .btn-primary {
+        font-size: 0.75rem; /* Kleinere Schriftgröße für den Button */
+        padding: 5px 8px;
+    }
+}
+@media (max-width: 768px) {
+    
+    #members .row,
+    #all-members-section .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #members .col-md-4,
+    #all-members-section .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #members .card,
+    #all-members-section .card {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    #members .card img,
+    #all-members-section .card img {
+        width: 70%; /* Deutlich kleinere Bildgröße */
+        height: 70%; /* Deutlich kleinere Bildgröße */
+        margin-top: 10px;
+    }
+
+    #members .card-title,
+    #all-members-section .card-title {
+        font-size: 1rem; /* Kleinere Schriftgröße für den Titel */
+        margin-top: 10px;
+    }
+
+    #members .card-text,
+    #all-members-section .card-text {
+        font-size: 0.8rem; /* Kleinere Schriftgröße für den Text */
+    }
+
+    #members .btn-primary,
+    #all-members-section .btn-primary {
+        font-size: 0.75rem; /* Kleinere Schriftgröße für den Button */
+        padding: 5px 8px;
+    }
+
+    #familyCarousel {
+        display: none; /* Karussell bei Mobilgeräten ausblenden */
+    }
+
+    #members .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    #members .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    #members .card {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    #members .card img {
+        width: 60px; /* Kleinere Bildgröße */
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    #members .card-title {
+        font-size: 1rem; /* Kleinere Schriftgröße für den Titel */
+        margin-top: 10px;
+    }
+
+    #members .card-text {
+        font-size: 0.8rem; /* Kleinere Schriftgröße für den Text */
+    }
+
+    #members .btn-primary {
+        font-size: 0.75rem; /* Kleinere Schriftgröße für den Button */
+        padding: 5px 8px;
+    }
+}
+/* Carousel is hidden on small screens */
+@media (max-width: 768px) {
+    #familyCarousel {
+        display: none;
+    }
+    #members-grid {
+        display: block;
+    }
+}
+
+/* Members Grid is hidden on larger screens */
+@media (min-width: 768px) {
+    #members-grid {
+        display: none;
+    }
+}
+
+/* Grundlegende Stile und Struktur bleiben unverändert */
+/* Members-Grid (Responsive) */
+@media (max-width: 768px) {
+    #members-grid .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    #members-grid .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-bottom: 20px;
+    }
+
+    #members-grid .card {
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #members-grid .card img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #members-grid .card-title {
+        font-size: 1rem;
+        margin-top: 10px;
+        color: #00796b;
+    }
+
+    #members-grid .card-text {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+
+    #members-grid .btn-primary {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        color: #fff;
+    }
+}
+
+/* Verstecken des members-grid auf größeren Bildschirmen */
+@media (min-width: 768px) {
+    #members-grid {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #familyCarousel .carousel-item img, /* Bilder im Karussell */
+    #members .card img, /* Bilder im All Members-Bereich */
+    #all-members-section .card img { /* Bilder im All Members-Bereich */
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+}
+
+/* Verbesserungen für den Header auf kleinen Bildschirmen */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin-right: 5px;
+        padding: 5px 0;
+    }
+
+    .navbar-toggler {
+        margin: 0 auto; /* Zentriert den Toggler-Button */
+    }
+
+    #social {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    #social .social-icon {
+        margin: 0 10px; /* Reduziert den Abstand zwischen den Icons */
+    }
+
+   
+}
+
+/* Verbesserungen für den Footer auf kleinen Bildschirmen */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .fab {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    footer .fab:not(:last-child) {
+        margin-bottom: 10px; /* Abstand zwischen Icons bei kleinen Bildschirmen */
+    }
+}
+
+/* Style du Footer pour petits écrans */
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 0;
+        background: linear-gradient(90deg, #17a2b8, #1ab3ca);
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .fab {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    footer .social-icons .fab {
+        margin: 0 10px;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    footer .social-icons .fab:hover {
+        color: #ffd700;
+    }
+}
+
+
+/* Anpassungen für kleine Bildschirme */
+@media (max-width: 768px) {
+    #social {
+        position: absolute;
+        right: 15px;
+        
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f4f5f7 0%, #e0f7fa 100%);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #17a2b8; /* Couleur bleu turquoise pour tous les titres */
+}
+
+header, footer {
+    background-color: #17a2b8; /* Bleu turquoise pour header et footer */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    background-color: #d4f1f4; /* Couleur turquoise clair au survol */
+}
+
+.navbar-light .navbar-nav .active {
+    color: #17a2b8;
+    background-color: #d4f1f4; /* Couleur turquoise clair pour les liens actifs */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Icônes sociales */
+.social-icon {
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff 0%, #e0f7fa 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Cartes */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #17a2b8; /* Couleur bleu turquoise pour les titres des cartes */
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #138f9a; /* Couleur turquoise foncée au survol */
+    border-color: #138f9a;
+}
+
+/* Section des événements */
+#events-section {
+    background: linear-gradient(135deg, #ffffff 0%, #d4f1f4 100%);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#events-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #17a2b8;
+}
+
+/* Pied de page */
+footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #17a2b8, #138f9a);
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+footer .fab {
+    font-size: 1.25rem;
+    transition: color 0.3s;
+    color: #fff;
+}
+
+footer .fab:hover,
+#social .fab:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+/* Media Queries pour une adaptation responsive */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    #image-section, #background-image-section {
+        height: 250px;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    #events-section h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .fab {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    footer .fab:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+
+

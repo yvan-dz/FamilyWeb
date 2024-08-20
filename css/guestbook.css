@@ -1,0 +1,314 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e0f7fa 100%);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #17a2b8; /* Bleu turquoise pour tous les titres */
+}
+
+header, footer {
+    background-color: #17a2b8; /* Bleu turquoise pour header et footer */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    background-color: #e0f7fa; /* Couleur turquoise au survol */
+}
+
+.navbar-light .navbar-nav .active {
+    color: #17a2b8;
+    background-color: #e0f7fa; /* Couleur turquoise pour les liens actifs */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.social-icon {
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+html {
+    scroll-behavior: smooth;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; /* Verlangsamen auf 2 Sekunden */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.guestbook-header, .guestbook-form, .guestbook-entries {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#guestbook-entries .list-group-item {
+    background: #ffffff;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#guestbook-entries .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#guestbook-entries .list-group-item .message-name {
+    color: #17a2b8; /* Bleu turquoise pour les noms */
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+#guestbook-entries .list-group-item .message-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+#guestbook-entries .list-group-item .message-text {
+    color: #333;
+}
+
+/* Stile für die Top-Kommentare-Sektion */
+.top-comments {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#top-comments .list-group-item {
+    background: #ffffff;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#top-comments .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#top-comments .list-group-item .message-name {
+    color: #17a2b8; /* Bleu turquoise pour les noms */
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+#top-comments .list-group-item .message-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+#top-comments .list-group-item .message-text {
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4, h5, h6 {
+        font-size: 1.1rem;
+    }
+    .lead{
+        font-size: 0.9rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    .guestbook-header, .guestbook-form, .guestbook-entries, .top-comments {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    #guestbook-entries .list-group-item, #top-comments .list-group-item {
+        padding: 15px;
+    }
+
+    #guestbook-entries .list-group-item .message-name, #top-comments .list-group-item .message-name {
+        font-size: 1rem;
+    }
+
+    #guestbook-entries .list-group-item .message-date, #top-comments .list-group-item .message-date {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer .fab {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #17a2b8, #138f9a); /* Dégradé turquoise pour le footer */
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+footer .social-icons a {
+    font-size: 1.25rem;
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:last-child {
+    margin-right: 0;
+}
+
+footer .social-icons a:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+/* Style du Footer pour petits écrans */
+@media (max-width: 768px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 0;
+        background: linear-gradient(90deg, #17a2b8, #138f9a); /* Dégradé turquoise pour le footer */
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .fab {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    footer .social-icons .fab {
+        margin: 0 10px;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    footer .social-icons .fab:hover {
+        color: #95d2db; /* Turquoise clair au survol */
+    }
+}
+
+/* General responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem; /* Adjusted from 2.5rem */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Adjusted from 2rem */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Adjusted from 1.75rem */
+    }
+
+    h4, h5, h6 {
+        font-size: 1.25rem; /* Slightly smaller */
+    }
+
+    p, .blog-post-meta {
+        font-size: 0.9rem; /* Adjusted for smaller screens */
+    }
+
+    .lead {
+        font-size: 1rem; /* Adjusted for smaller screens */
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 1rem; /* Adjusted for better navigation on small screens */
+    }
+
+    .btn {
+        font-size: 0.875rem; /* Smaller button text */
+    }
+}

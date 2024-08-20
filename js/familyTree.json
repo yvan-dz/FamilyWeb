@@ -1,0 +1,78 @@
+{
+    "name": "Grandpa Roger",
+    "birthDate": "1930-01-01",
+    "birthPlace": "Paris",
+    "job": "Farmer",
+    "traits": "Wise, Hardworking",
+    "children": [
+        {
+            "name": "Julien",
+            "birthDate": "1955-05-20",
+            "birthPlace": "Lyon",
+            "job": "Engineer",
+            "traits": "Intelligent, Curious",
+            "children": [
+                {
+                    "name": "Joseph",
+                    "birthDate": "1980-03-15",
+                    "birthPlace": "Marseille",
+                    "job": "Doctor",
+                    "traits": "Kind, Helpful"
+                },
+                {
+                    "name": "Aline",
+                    "birthDate": "1985-07-22",
+                    "birthPlace": "Nice",
+                    "job": "Teacher",
+                    "traits": "Patient, Knowledgeable"
+                }
+            ]
+        },
+        {
+            "name": "Rose",
+            "birthDate": "1962-03-30",
+            "birthPlace": "Lille",
+            "job": "Accountant",
+            "traits": "Organized, Rigorous",
+            "children": [
+                {
+                    "name": "Paul",
+                    "birthDate": "1990-09-10",
+                    "birthPlace": "Bordeaux",
+                    "job": "Project Manager",
+                    "traits": "Leader, Communicative"
+                }
+            ]
+        },
+        {
+            "name": "Luc",
+            "birthDate": "1960-10-10",
+            "birthPlace": "Paris",
+            "job": "Artist",
+            "traits": "Creative, Passionate",
+            "children": [
+                {
+                    "name": "Me",
+                    "birthDate": "1990-12-12",
+                    "birthPlace": "Paris",
+                    "job": "Developer",
+                    "traits": "Curious, Innovative"
+                },
+                {
+                    "name": "Armin",
+                    "birthDate": "1995-08-08",
+                    "birthPlace": "Paris",
+                    "job": "Designer",
+                    "traits": "Creative, Observant"
+                },
+                {
+                    "name": "C.C.",
+                    "birthDate": "2000-02-15",
+                    "birthPlace": "Paris",
+                    "job": "Student",
+                    "traits": "Studious, Ambitious"
+                }
+            ]
+        }
+    ]
+}

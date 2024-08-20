@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e0f7fa 100%);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #17a2b8; /* Bleu turquoise pour tous les titres */
+}
+
+header, footer {
+    background-color: #17a2b8; /* Bleu turquoise pour header et footer */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    background-color: #d4f1f4; /* Couleur turquoise clair au survol */
+}
+
+.navbar-light .navbar-nav .active {
+    color: #17a2b8;
+    background-color: #d4f1f4; /* Couleur turquoise clair pour les liens actifs */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.social-icon {
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+html {
+    scroll-behavior: smooth;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Article Content Styles */
+.article-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #17a2b8; /* Bleu turquoise pour les titres */
+}
+
+.article-meta {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.article-text {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Comment Section */
+.comment-section {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #17a2b8; /* Bleu turquoise pour le titre des commentaires */
+}
+
+.comment-form {
+    margin-bottom: 30px;
+}
+
+.comment-form textarea {
+    resize: none;
+}
+
+.comment {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comment .comment-author {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.comment .comment-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.comment .comment-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #17a2b8, #138f9a); /* Dégradé turquoise pour le footer */
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+footer .social-icons a {
+    font-size: 1.25rem;
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:last-child {
+    margin-right: 0;
+}
+
+footer .social-icons a:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+/* Styles for Smaller Screens */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.6rem; /* Adjusted from 2.5rem */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Adjusted from 2rem */
+    }
+
+    /* General font-size reduction */
+    body {
+        font-size: 0.9rem;
+    }
+
+    /* Smaller header and footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+    }
+
+    footer .fab {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    footer .social-icons .fab {
+        margin: 0 10px;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    footer .social-icons .fab:hover {
+        color: #95d2db; /* Turquoise clair au survol */
+    }
+
+    /* Smaller article content */
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-meta {
+        font-size: 0.9rem;
+    }
+
+    .article-text {
+        font-size: 1rem;
+    }
+
+    /* Smaller comment section */
+    .comment-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .comment .comment-text {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #17a2b8; /* Bleu turquoise */
+    --secondary-color: #138f9a; /* Bleu turquoise foncé */
+    --light-color: #d4f1f4; /* Bleu turquoise clair */
+    --text-color: #333; /* Couleur de texte par défaut */
+    --background-color: #f4f5f7; /* Couleur de fond par défaut */
+    --card-background: #ffffff; /* Fond des cartes */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--background-color) 0%, var(--light-color) 100%);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color); /* Couleur bleu turquoise pour tous les titres */
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+header, footer {
+    background-color: var(--primary-color); /* Bleu turquoise pour header et footer */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+    background-color: var(--light-color); /* Couleur turquoise clair au survol */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-light .navbar-nav .active {
+    color: var(--primary-color);
+    background-color: var(--light-color); /* Couleur turquoise clair pour les liens actifs */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Icônes sociales */
+.social-icon {
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--light-color); /* Turquoise clair au survol */
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--card-background) 0%, var(--light-color) 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Cartes */
+.card {
+    border: 1px solid var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, var(--card-background) 0%, #f0f0f0 100%);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: var(--primary-color); /* Couleur bleu turquoise pour les titres des cartes */
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color); /* Couleur turquoise foncée au survol */
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); /* Amélioration de l'accessibilité */
+}
+
+/* Section des événements */
+#events-section {
+    background: linear-gradient(135deg, var(--card-background) 0%, var(--light-color) 100%);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#events-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+/* Pied de page */
+footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+footer .fab {
+    font-size: 1.25rem;
+    transition: color 0.3s;
+    color: #fff;
+}
+
+footer .fab:hover,
+#social .fab:hover {
+    color: var(--light-color); /* Turquoise clair au survol */
+}
+
+footer .fab:not(:last-child) {
+    margin-right: 15px; /* Espacement amélioré entre les icônes */
+}
+
+/* Animation au défilement */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transform: translateY(20px);
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Queries pour une adaptation responsive */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    #events-section h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .fab {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    footer .fab:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+

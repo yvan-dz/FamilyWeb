@@ -1,0 +1,373 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e0f7fa 100%);
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #17a2b8; /* Bleu turquoise pour tous les titres */
+}
+
+header, footer {
+    background-color: #17a2b8; /* Bleu turquoise pour header et footer */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    background-color: #d4f1f4; /* Couleur turquoise clair au survol */
+}
+
+.navbar-light .navbar-nav .active {
+    color: #17a2b8;
+    background-color: #d4f1f4; /* Couleur turquoise clair pour les liens actifs */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.social-icon {
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+html {
+    scroll-behavior: smooth;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.calendar-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e0f7fa 100%);
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#datepicker {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.event-list h2 {
+    color: #17a2b8; /* Bleu turquoise pour les titres */
+}
+
+.event-list .list-group-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-list .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#event-details .event-detail-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#event-details .event-title {
+    color: #17a2b8; /* Bleu turquoise pour les titres */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#event-details .event-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+#event-details .event-description {
+    color: #333;
+}
+
+/* Updates Section */
+.updates-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.updates-section .update-item {
+    display: flex;
+    justify-content: center;
+}
+
+.updates-section .update-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.updates-section .update-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.updates-section .update-title {
+    color: #17a2b8; /* Bleu turquoise pour les titres */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.updates-section .update-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.updates-section .update-text {
+    color: #333;
+}
+
+/* Memorable Dates */
+.memorable-dates {
+    background: #17a2b8; /* Bleu turquoise pour la section */
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3%;
+}
+
+.memorable-dates h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.memorable-dates .list-group-item {
+    background: #fff;
+    color: #17a2b8; /* Bleu turquoise pour le texte */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memorable-dates .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.memorable-dates .list-group-item h5 {
+    color: #17a2b8; /* Bleu turquoise pour le titre */
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.memorable-dates .list-group-item p {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.memorable-dates .list-group-item .date {
+    font-weight: bold;
+    color: #17a2b8; /* Bleu turquoise pour la date */
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(90deg, #17a2b8, #138f9a); /* Dégradé turquoise pour le footer */
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+footer .social-icons a {
+    font-size: 1.25rem;
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:last-child {
+    margin-right: 0;
+}
+
+footer .social-icons a:hover {
+    color: #95d2db; /* Turquoise clair au survol */
+}
+
+/* Highlight the dates with events */
+.ui-datepicker .event-day a {
+    background-color: #17a2b8; /* Bleu turquoise pour les dates des événements */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    width: 2.5em;
+    height: 2.5em;
+    display: block;
+    margin: auto;
+}
+
+/* Temporary popup styling */
+.event-popup {
+    position: absolute;
+    background: #17a2b8; /* Bleu turquoise pour le popup */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    .calendar-header {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+
+    .calendar-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .calendar-header p {
+        font-size: 1rem;
+    }
+
+    #datepicker {
+        padding: 15px;
+    }
+
+    .event-list h2 {
+        font-size: 1.5rem;
+    }
+
+    .event-list .list-group-item {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    #event-details .event-title {
+        font-size: 1.2rem;
+    }
+
+    .updates-section {
+        padding: 30px 0;
+    }
+
+    .updates-section .update-title {
+        font-size: 1.2rem;
+    }
+
+    .memorable-dates {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+
+    .memorable-dates h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .memorable-dates .list-group-item {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 0;
+        background: linear-gradient(90deg, #17a2b8, #138f9a); /* Dégradé turquoise pour le footer */
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .fab {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    footer .social-icons .fab {
+        margin: 0 10px;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    footer .social-icons .fab:hover {
+        color: #95d2db; /* Turquoise clair au survol */
+    }
+}

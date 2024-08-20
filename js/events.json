@@ -1,0 +1,43 @@
+{
+    "events": [
+      {
+        "title": "Mom's Birthday",
+        "date": "2024-08-10",
+        "description": "Celebration of Mom's birthday with the whole family."
+      },
+      {
+        "title": "Beach Trip",
+        "date": "2024-08-20",
+        "end": "2024-08-22",
+        "description": "Family trip to the beach for a week of relaxation and fun."
+      },
+      {
+        "title": "Family Reunion",
+        "date": "2024-09-01",
+        "description": "Big family reunion at the central park."
+      },
+      {
+        "title": "Christmas Dinner",
+        "date": "2024-12-25",
+        "description": "Christmas dinner with the whole family at the grandparents' house."
+      }
+    ],
+    "memorableDates": [
+      {
+        "title": "Parents' Wedding",
+        "date": "1995-06-25",
+        "description": "Parents' wedding, a day of celebration and joy."
+      },
+      {
+        "title": "Julie’s Birth",
+        "date": "2000-03-12",
+        "description": "Julie's birth, an unforgettable day for the whole family."
+      },
+      {
+        "title": "Move to Paris",
+        "date": "2010-09-15",
+        "description": "The family moved to Paris, marking the beginning of a new adventure."
+      }
+    ]
+  }
+  

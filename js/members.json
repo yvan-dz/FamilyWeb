@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Dad",
+        "description": "Dad is the pillar of the family. He loves gardening and spending time tinkering in the garage.",
+        "image": "https://via.placeholder.com/150",
+        "job": "Engineer",
+        "birthdate": "1965-04-10",
+        "birthplace": "New York, USA",
+        "traits": "Hardworking, Caring, Intelligent",
+        "hobbies": "Gardening, DIY projects, Fishing",
+        "social": {
+            "facebook": "https://facebook.com/dad",
+            "instagram": "https://instagram.com/dad"
+        }
+    },
+    {
+        "name": "Mom",
+        "description": "Mom is the heart of the home. She loves cooking delicious meals for the family and tending to the garden.",
+        "image": "https://via.placeholder.com/150",
+        "job": "Teacher",
+        "birthdate": "1968-08-22",
+        "birthplace": "Boston, USA",
+        "traits": "Loving, Organized, Patient",
+        "hobbies": "Cooking, Reading, Gardening",
+        "social": {
+            "facebook": "https://facebook.com/mom",
+            "instagram": "https://instagram.com/mom"
+        }
+    },
+    {
+        "name": "Daughter",
+        "description": "Our daughter is an aspiring artist. She spends her days drawing and painting, filling the house with colors.",
+        "image": "https://via.placeholder.com/150",
+        "job": "Student",
+        "birthdate": "2000-11-05",
+        "birthplace": "Los Angeles, USA",
+        "traits": "Creative, Energetic, Thoughtful",
+        "hobbies": "Painting, Drawing, Dancing",
+        "social": {
+            "facebook": "https://facebook.com/daughter",
+            "instagram": "https://instagram.com/daughter"
+        }
+    },
+    {
+        "name": "Son",
+        "description": "Our son is a little adventurer. He loves exploring nature and playing with his friends.",
+        "image": "https://via.placeholder.com/150",
+        "job": "Student",
+        "birthdate": "2005-06-15",
+        "birthplace": "Chicago, USA",
+        "traits": "Adventurous, Curious, Brave",
+        "hobbies": "Exploring, Hiking, Video games",
+        "social": {
+            "facebook": "https://facebook.com/son",
+            "instagram": "https://instagram.com/son"
+        }
+    },
+    {
+        "name": "Grandpa",
+        "description": "Grandpa is the family's memory. He loves telling stories from his past and sharing his wisdom with the grandchildren.",
+        "image": "https://via.placeholder.com/150",
+        "job": "Retired",
+        "birthdate": "1940-03-12",
+        "birthplace": "London, UK",
+        "traits": "Wise, Gentle, Funny",
+        "hobbies": "Storytelling, Chess, Gardening",
+        "social": {
+            "facebook": "https://facebook.com/grandpa",
+            "instagram": "https://instagram.com/grandpa"
+        }
+    },
+    {
+        "name": "Friend",
+        "description": "Our friend is almost a member of the family. He is always there to support us and share moments of joy.",
+        "image": "https://via.placeholder.com/150",
+        "job": "Software Developer",
+        "birthdate": "1985-09-30",
+        "birthplace": "San Francisco, USA",
+        "traits": "Friendly, Helpful, Loyal",
+        "hobbies": "Coding, Basketball, Movies",
+        "social": {
+            "facebook": "https://facebook.com/friend",
+            "instagram": "https://instagram.com/friend"
+        }
+    }
+]

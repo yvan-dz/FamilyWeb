@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> <!-- AOS CSS -->
+    <link rel="stylesheet" href="css/blog.css"> <!-- Blog CSS -->
+</head>
+<body>
+    <header class="bg-light-pink text-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="index.html">Family</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="guestbook.html">Guestbook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="genealogy.html">Genealogy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="d-flex align-items-center" id="social">
+                <a href="#" class="text-dark mr-3 social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-dark mr-3 social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-dark mr-3 social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-dark social-icon"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="blog-header text-center mb-5" data-aos="fade-up">
+            <h1 class="font-weight-bold">Family Blog</h1>
+            <p class="lead">Discover our latest articles and news.</p>
+        </div>
+
+        <section class="blog-posts" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-6 blog-post mb-4">
+                    <div class="post-content" data-id="0">
+                        <img src="https://via.placeholder.com/600x400" alt="Post 1" class="img-fluid rounded">
+                        <h2 class="blog-post-title mt-3">Article Title 1</h2>
+                        <p class="blog-post-meta">Published on August 7, 2024 by <a href="#">Author</a></p>
+                        <p>Here is a preview of our latest article. Read the full article to learn more about this interesting topic.</p>
+                        <a href="article.html?id=0" class="btn btn-primary read-more" data-id="0">Read more</a>
+                    </div>
+                </div>
+                <div class="col-md-6 blog-post mb-4">
+                    <div class="post-content" data-id="1">
+                        <img src="https://via.placeholder.com/600x400" alt="Post 2" class="img-fluid rounded">
+                        <h2 class="blog-post-title mt-3">Article Title 2</h2>
+                        <p class="blog-post-meta">Published on August 5, 2024 by <a href="#">Author</a></p>
+                        <p>Another captivating preview. Discover more details in the full article.</p>
+                        <a href="article.html?id=1" class="btn btn-primary read-more" data-id="1">Read more</a>
+                    </div>
+                </div>
+                <div class="col-md-6 blog-post mb-4">
+                    <div class="post-content" data-id="2">
+                        <img src="https://via.placeholder.com/600x400" alt="Post 3" class="img-fluid rounded">
+                        <h2 class="blog-post-title mt-3">Article Title 3</h2>
+                        <p class="blog-post-meta">Published on August 3, 2024 by <a href="#">Author</a></p>
+                        <p>Yet another captivating preview. Discover more details in the full article.</p>
+                        <a href="article.html?id=2" class="btn btn-primary read-more" data-id="2">Read more</a>
+                    </div>
+                </div>
+                <div class="col-md-6 blog-post mb-4">
+                    <div class="post-content" data-id="3">
+                        <img src="https://via.placeholder.com/600x400" alt="Post 4" class="img-fluid rounded">
+                        <h2 class="blog-post-title mt-3">Article Title 4</h2>
+                        <p class="blog-post-meta">Published on August 1, 2024 by <a href="#">Author</a></p>
+                        <p>Yet another captivating preview. Discover more details in the full article.</p>
+                        <a href="article.html?id=3" class="btn btn-primary read-more" data-id="3">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="updates-section mt-5 mb-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="font-weight-bold text-center mb-4">News and Updates</h2>
+                <div class="row">
+                    <div class="col-md-6 update-item mb-4">
+                        <div class="update-content bg-white p-4 border rounded shadow-sm">
+                            <h3 class="update-title">Important Family News</h3>
+                            <p class="update-date text-muted">Published on August 1, 2024</p>
+                            <p class="update-text">Here is the latest news from our family. We recently celebrated Mom’s birthday with a big family party. It was a wonderful time for all of us.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 update-item mb-4">
+                        <div class="update-content bg-white p-4 border rounded shadow-sm">
+                            <h3 class="update-title">Upcoming Family Trip</h3>
+                            <p class="update-date text-muted">Published on July 15, 2024</p>
+                            <p class="update-text">We are excited to announce our upcoming family trip to the beach. It will be a great opportunity for us to spend time together and create new memories.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 update-item mb-4">
+                        <div class="update-content bg-white p-4 border rounded shadow-sm">
+                            <h3 class="update-title">Successful Family Reunion</h3>
+                            <p class="update-date text-muted">Published on June 20, 2024</p>
+                            <p class="update-text">The family reunion at Central Park was a great success. Thank you to everyone who joined us for a day of games, food, and laughter.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 update-item mb-4">
+                        <div class="update-content bg-white p-4 border rounded shadow-sm">
+                            <h3 class="update-title">New Family Member</h3>
+                            <p class="update-date text-muted">Published on May 5, 2024</p>
+                            <p class="update-text">We are thrilled to welcome a new member to our family. Welcome to the world, little Julien!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light-pink text-dark text-center py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="social-icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+            <p>&copy; 2024 Family [Name]. <br>All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> <!-- AOS JS -->
+    <script src="js/blog.js"></script> <!-- Blog JS -->
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Guestbook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> <!-- AOS CSS -->
+    <link rel="stylesheet" href="css/guestbook.css"> <!-- Guestbook CSS -->
+</head>
+<body>
+    <header class="bg-light-pink text-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="index.html">Family</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="guestbook.html">Guestbook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="genealogy.html">Genealogy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="d-flex align-items-center" id="social">
+                <a href="#" class="text-dark mr-3 social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-dark mr-3 social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-dark mr-3 social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-dark social-icon"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="guestbook-header text-center mb-5" data-aos="fade-up">
+            <h1 class="font-weight-bold">Family Guestbook</h1>
+            <p class="lead">Leave a message to share your memories and thoughts with our family.</p>
+        </div>
+
+        <div class="guestbook-form mb-5" data-aos="fade-up">
+            <h2 class="font-weight-bold">Leave a Message</h2>
+            <form id="guestbook-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="guestbook-entries mb-5" data-aos="fade-up">
+            <h2 class="font-weight-bold">Previous Messages</h2>
+            <ul id="guestbook-entries" class="list-group">
+                <!-- Messages will be inserted here -->
+            </ul>
+        </div>
+
+        <div class="top-comments" data-aos="fade-up">
+            <h2 class="font-weight-bold">Top Comments</h2>
+            <ul id="top-comments" class="list-group">
+                <!-- Top comments will be inserted here -->
+            </ul>
+        </div>
+    </main>
+
+    <footer class="bg-light-pink text-dark text-center py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="social-icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+            <p>&copy; 2024 Family [Name]. <br>All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> <!-- AOS JS -->
+    <script src="js/guestbook.js"></script> <!-- Guestbook JS -->
+</body>
+</html>
